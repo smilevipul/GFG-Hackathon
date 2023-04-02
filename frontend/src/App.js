@@ -10,6 +10,7 @@ import About from './components/About';
 import Error from './components/Error';
 import Login from './components/Sharkslogin';
 import Sharkssignup from './components/Sharkssignup';
+import Business from './components/Business';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
        <Navbar/>
     <Routes>
       <Route path="/" element = {<Home/>}/>
+      <Route path="/business" element = {<Business/>}/>
       <Route path="/about" element = {<About/>}/>
       <Route path="/contact" element = {<Contact/>}/>
       <Route path="/sharkslogin" element = {<Login/>}/>
