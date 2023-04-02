@@ -1,23 +1,27 @@
-import React from "react";
+import React from 'react'
+// import Sharkslogin from "./Sharkslogin";
 import Button from "@mui/material/Button";
 import loginimg from "../images/login.webp";
 import {NavLink} from 'react-router-dom';
-const Login = () => {
+
+const EpLogin = () => {
   return (
     <>
-      <div className="logindiv">
+        {/* <Sharkslogin/> */}
+
+        <div className="logindiv">
         <div className="slogin">
           <div className="left">
             <img src={loginimg} alt="loginimg" />
             <Button variant="outlined">
-            <NavLink to = "/shakssignup">
+            <NavLink to = "/epsignup">
               Create Account
             </NavLink>
             </Button>
           </div>
 
           <div className="right">
-            <h1>Sharks Login Form</h1>
+            <h1>Ep Login Form</h1>
             <form method="POST">
               <div>
                 <i className="fa-solid fa-user"></i>
@@ -37,7 +41,7 @@ const Login = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Login;
+export default EpLogin

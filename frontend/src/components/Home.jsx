@@ -15,8 +15,7 @@ const Home = () => {
         <NavLink to="/sharkslogin" className="btnlink" >Sharks Login/SignUp </NavLink>
     </Button>
         <Button variant="outlined" color="success" className='btn'>
-        <NavLink to="/entrepreneursform" className="btnlink">  Entrepreneurs Login/SignUp</NavLink>
-
+        <NavLink to="/eplogin" className="btnlink">  Entrepreneurs Login/SignUp</NavLink>
         </Button>
     </div>   
     </div>
