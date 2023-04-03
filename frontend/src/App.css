@@ -6,32 +6,7 @@
 
 /*-----------------Nabbar---------------------------*/
 
-/* .navlinks{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(18, 21, 18);
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
-}
-.navlinks li{
-  list-style: none;
-  
-}
-.navlink{
-  text-decoration: none;
-  margin: 0 1rem;
-  color: whitesmoke;
-  font-weight:400;
-  font-size: 1.3rem;
-}
 
-#logo{
-  margin-right: auto;
-  color: whitesmoke;
-  font-weight: 800;
-  font-size: 1.7rem;
-} */
 .navbar{
   box-shadow: 0px 2px 200px #756f6f, 0px -10px 5px #100f0f;
 }
@@ -78,7 +53,7 @@
 }
 
 
-/* ------------------SHarks Login -------------------------- */
+/* --------------------------------------------------SHarks Login -------------------------- */
 .logindiv{
   width: 100%;
   height: 90vh;
@@ -92,7 +67,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 5px gray;
+  box-shadow: 2px 2px 5px blue;
+  border-radius: 10px;
   padding: 1rem;
 }
 .slogin .left{
@@ -126,19 +102,25 @@
 
 .sharkssignup{
   display: flex;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   padding: 1rem;
+  border-radius: 10px;
+  /* background-color: red; */
+  box-shadow: 2px 2px 10px blue;
 }
 .sharkssignup .left{
   display: flex;
   flex-direction: column;
+  margin-right: 1rem;
 }
-.sharkssignup .left .input_div{
+.epsignupmaindiv .left .input_div,.sharkssignup .left .input_div{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sharkssignup .left .input_div input{
+.epsignupmaindiv .left .input_div input, .sharkssignup .left .input_div input{
   outline: none;
   border: none;
   border-bottom: 1px solid rgb(3, 3, 3);
@@ -154,5 +136,123 @@
   flex-direction: column;
 }
 .signupmaindiv .right img{
-  height: 20rem;
+  height: 36rem;
+  width: 25rem;
 }
+
+
+/* --------------------Sharks Section  */
+
+.sharksmaindiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.sharkscards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sharksmaindiv .card{
+  /* width:20%; */
+  /* height: 70vh; */
+  margin: 1rem 1rem;
+
+}
+.sharksmaindiv .card img{
+  height: 22rem;
+}
+.sharksmaindiv .card .sharksimg{
+  /* height: 40%; */
+}
+.sharksmaindiv .card .sharksdetails{
+  margin-left: 1rem;
+  margin-top: 1%;
+  /* height: 60%; */
+
+}
+
+
+/*--------------------------------------- Ep Signup Section----------------------------------  */
+.epsignupmaindiv{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.epsharkssignup{
+  /* padding: 1rem 1rem; */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* background-color: red; */
+  box-shadow: 2px 2px 10px blue;
+  border-radius: 1rem;
+}
+
+.epsharkssignup .left form{
+  /* padding: 1rem 1rem; */
+  display: flex; 
+}
+.epsharkssignup .left form .form_right{
+  margin-left: 1rem;
+  /* background-color: red; */
+
+}
+.epsharkssignup .right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.epsharkssignup .right img{
+  height: 29rem;
+  width: 25rem;
+}
+
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+
+  .sharkscards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .sharkscards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .sharkscards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }

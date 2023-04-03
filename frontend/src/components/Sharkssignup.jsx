@@ -68,6 +68,12 @@ const Sharkssignup = () => {
                 </label>
                 <input class="form-control" type="file" id="formFile" />
               </div>
+              <div class="mb-3">
+                <label for="formFile" class="form-label">
+                  Upload Your Photo
+                </label>
+                <input class="form-control" type="file" id="formFile" />
+              </div>
               <Button variant="outlined" type="submit" className="leftbtn">
                 register
               </Button>

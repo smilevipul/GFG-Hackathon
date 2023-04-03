@@ -10,6 +10,8 @@ const Home = () => {
     <div className="hmain">
     <div className='hsec_1'>
     <h1>Now Every Entrepreneurs Get Investment</h1>
+        <h2> & </h2>
+    <h1>Everyone Can Be A Sharks</h1>    
     <div className="btns">
     <Button variant="outlined" color="success" className='btn' >
         <NavLink to="/sharkslogin" className="btnlink" >Sharks Login/SignUp </NavLink>

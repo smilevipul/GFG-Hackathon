@@ -13,6 +13,7 @@ import Sharkssignup from './components/Sharkssignup';
 import Business from './components/Business';
 import Epsignup from './components/Epsignup';
 import EpLogin from './components/EpLogin';
+import Sharks from './components/Sharks';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/eplogin" element = {<EpLogin/>}/>
       <Route path="/shakssignup" element = {<Sharkssignup/>}/>
       <Route path="/epsignup" element = {<Epsignup/>}/>
+      <Route path="/sharks" element = {<Sharks/>}/>
       <Route path="*" element = {<Error/>}/>
     </Routes>  
     </>

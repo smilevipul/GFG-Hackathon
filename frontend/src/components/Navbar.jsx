@@ -33,7 +33,12 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link active" aria-current="page" to="/business">
-                  Business
+                  Businesses
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link active" aria-current="page" to="/sharks">
+                  Sharks
                 </NavLink>
               </li>
               <li className="nav-item">
